@@ -1,0 +1,18 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+button{
+    height: 100px;
+    font-size: 30px;
+    width: 400px;
+    border-radius: 6px;
+    color: wheat;
+    cursor: pointer;
+    background-color: black;
+
+}

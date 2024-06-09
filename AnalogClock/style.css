@@ -1,0 +1,65 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .clock{
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+    position: relative;
+    border: 1px solid black;
+}
+.clock label{
+    position: absolute;
+    inset: 20px;
+    text-align: center;
+    transform: rotate(calc(var(--i) * (360deg / 12))) ;
+}
+.clock label span{
+    font-weight: 600;
+    display: inline-block;
+    font-size: 30px;
+    transform: rotate(calc(var(--i) * (-360deg / 12))) ;
+
+}
+
+.container .indicator{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+.indicator .hand{
+    position: absolute;
+    height: 130px;
+    width: 4px;
+    background: orangered;
+    bottom: 0;
+    border-radius: 10px;
+
+    transform-origin: bottom;
+}
+
+.hand.minute{
+    height: 120px;
+    width: 5px;
+    background: orange;
+    border-radius: 10px;
+
+}
+.hand.hour{
+    height: 100px;
+    width: 8px;
+    background: blue;
+    border-radius: 10px;
+}
